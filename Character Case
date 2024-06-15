@@ -1,0 +1,8 @@
+c = input()
+if c.isalpha():
+    if c.islower():
+        print(0)
+    elif c.isupper():
+        print(1)
+else:
+    print(-1)
