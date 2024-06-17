@@ -1,0 +1,7 @@
+t = (80 , 20 , 50 , 70 , 100 , 90)
+t = list(t)
+# for ascending order sort ---> t.sort()
+t.sort(reverse=True) # for descending order sort
+t = tuple(t)
+print(t)
+type(t)
