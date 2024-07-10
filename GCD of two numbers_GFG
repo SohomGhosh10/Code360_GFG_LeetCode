@@ -1,0 +1,10 @@
+class Solution:
+    def gcd(self, a : int, b : int) -> int:
+        # code here
+        while(True):
+            rem = a%b
+            if(rem == 0):
+                return b
+            else:
+                a = b
+                b = rem
