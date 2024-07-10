@@ -1,0 +1,7 @@
+class Solution:
+	def reverse_digit(self, n):
+        
+        a = str(n)
+        ans = a[::-1]
+        a = int(ans)
+        return a
