@@ -1,0 +1,18 @@
+class Solution:
+    def count (self,s):
+        # your code here
+        a = 0
+        b = 0
+        c = 0
+        d = 0
+        
+        for i in s:
+            if i.isupper():
+                a += 1
+            elif i.islower():
+                b += 1
+            elif i.isnumeric():
+                c += 1
+            else:
+                d += 1
+        return a,b,c,d
