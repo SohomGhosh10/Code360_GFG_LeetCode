@@ -1,0 +1,8 @@
+class Solution:
+	def sum_of_gp(self, n, a, r):
+		# Code here
+        
+        if r!=1:
+		    return a*((1-r**n)//(1-r))
+		else:
+		    return n*a
