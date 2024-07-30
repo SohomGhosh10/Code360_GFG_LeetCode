@@ -1,0 +1,20 @@
+class Solution {
+    public List<Integer> selfDividingNumbers(int left, int right) {
+        List<Integer> list = new ArrayList<>();
+        int n1 = left , n2 = right;
+        for(int i = left; i <= right; i++){
+            if(Divisibility(i)){
+                list.add(i);
+            }
+        }
+        return list;
+    }
+    public boolean Divisibility(int num){
+        int divisor = num;
+        while(divisor > 0){
+            if(divisor % 10 == 0 || num % (divisor % 10) != 0) return false;
+            divisor = divisor / 10;
+        }
+        return true;
+    }
+}
