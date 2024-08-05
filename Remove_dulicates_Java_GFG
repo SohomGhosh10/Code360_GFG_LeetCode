@@ -1,0 +1,20 @@
+class Solution {
+    // Function to remove duplicates from the given array
+    public int remove_duplicate(List<Integer> arr) {
+         List<Integer> integerList= new ArrayList<>();
+        for (int i = 0; i < arr.size(); i++) {
+            int count=1;
+            for (int j = i+1; j < arr.size(); j++) {
+                if(arr.get(i)==arr.get(j)){
+                    count++;
+
+                }
+            }
+            if(count==1){
+
+                integerList.add(arr.get(i));
+            }
+        }
+        return integerList.size();
+    }
+}
